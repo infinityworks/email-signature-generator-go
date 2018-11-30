@@ -10,7 +10,7 @@ The app is built using Go
 It is already built so you should be able to run the applcation using
 
 ```
-email-signature-generator-go
+./email-signature-generator-go
 ```
 
 This spins up a Go server which hosts a form on 
