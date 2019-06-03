@@ -1,0 +1,48 @@
+{{define "title"}}
+Email signature
+{{end}}
+
+{{define "body"}}
+<table width="351" cellspacing="0" cellpadding="0" border="0">
+  <td
+    style="vertical-align: top; text-align:left;color:#000000;font-size:12px;font-family:'Sans Serif', arial; text-align:left">
+    <tr>
+      <span
+        style="margin-right:5px;color:#000000;font-size:18px;font-family:'Sans Serif', arial"><b>{{.Signature.Name}}</b></span><br>
+      <span
+        style="margin-right:5px;color:#000000;font-size:13px;font-family:'Sans Serif', arial"><b>{{.Signature.JobTitle}}</b></span>
+      <br><br>
+    </tr>
+    <tr>
+      <span style="margin-right:5px;color:#E69138;font-size:13px;font-family:'Sans Serif', arial"><b>Infinity
+          Works</b></span><br>
+      {{if .Signature.OfficeNumber}}
+      <span style="margin-right:5px;color:#000000;font-size:13px;font-family:'Sans Serif', arial">Office:
+        {{.Signature.OfficeNumber}}</span><br>
+      {{end}}
+      {{if .Signature.MobileNumber}}
+      <span style="margin-right:5px;color:#000000;font-size:13px;font-family:'Sans Serif', arial">Mobile:
+        {{.Signature.MobileNumber}}</span><br>
+      {{end}}
+      <span style="margin-right:5px;color:#000000;font-size:13px;font-family:'Sans Serif', arial">Email:
+        <a href="mailto:{{.Signature.Email}}">{{.Signature.Email}}</a></span>
+      <br><br>
+    </tr>
+    <tr>
+      <span style="margin-right:5px;color:#000000;font-size:13px;font-family:'Sans Serif', arial"><a
+          href="https://www.infinityworks.com" target="_blank">www.infinityworks.com</a></span>
+      <br><br>
+    </tr>
+    <tr>
+      <span style="margin-right:5px;color:#000000;font-size:10px;font-family:'Sans Serif', arial">Infinity Works
+        Consulting is a limited company registered in England and Wales<br>
+        Company Registration No. 08189 469</span>
+      <br><br>
+    </tr>
+    <tr>
+      <span style="margin-right:5px;color:#000000;font-size:10px;font-family:'Sans Serif', arial">Registered
+        offices: Infinity Works, Apsley House, 78 Wellington Street, Leeds, LS1 2EQ</span>
+    </tr>
+  </td>
+</table>
+{{end}}

@@ -1,0 +1,31 @@
+{{define "title"}}
+    Signature Details
+{{end}}
+
+{{define "body"}}
+    {{if .Error}}
+        <span style="color:red;">{{.Message}}</span><br /><br />
+    {{end}}
+
+    Enter your details then hit enter to get your email signature
+
+    <form method="POST">
+
+    <label>Name:</label><br />
+    <input type="text" name="name"><br />
+
+    <label>Job Title:</label><br />
+    <input type="text" name="jobTitle"><br />
+
+    <label>Office Number:</label><br />
+    <input type="text" name="officeNo"><br />
+
+    <label>Mobile Number:</label><br />
+    <input type="text" name="mobileNo"><br />
+
+    <label>Email:</label><br />
+    <input type="text" name="email"><br />
+    <br />
+    <input type="submit" value="Generate Signature...">
+  </form>
+{{end}}
